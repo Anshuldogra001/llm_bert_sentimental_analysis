@@ -191,8 +191,7 @@ def get_img_as_base64(file):
         data = f.read()
     return base64.b64encode(data).decode()
 
-img_bg = get_img_as_base64("ai-generated-g666391614_1920.jpg")
-img_sidebar = get_img_as_base64("ice-2575405_1280.jpg")
+img_bg = get_img_as_base64("back_img.jpg")
 
 page_bg_img = f"""
 <style>
@@ -204,12 +203,6 @@ page_bg_img = f"""
     background-attachment: fixed;
 }}
 
-# [data-testid="stSidebar"] > div:first-child {{
-#     background-image: url("data:image/png;base64,{img_sidebar}");
-#     background-position: center;
-#     background-repeat: no-repeat;
-#     background-attachment: fixed;
-# }}
 
 [data-testid="stHeader"] {{
     background: rgba(0,0,0,0);
