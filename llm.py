@@ -10,6 +10,9 @@ from transformers import BartForConditionalGeneration, BartTokenizer
 import streamlit as st
 import base64
 st.title("It's Sentiment Analysis!")
+
+# uncomment it only if the other file not working
+
 # import gdown
 
 # url = 'https://drive.google.com/uc?id=0B9P1L--7Wd2vNm9zMTJWOGxobkU'
