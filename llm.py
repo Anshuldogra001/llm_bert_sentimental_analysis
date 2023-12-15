@@ -187,6 +187,22 @@ else:
 
 
 
+st.sidebar.title("Options")
+st.sidebar.info("This is a simple Sentiment Analysis using Streamlit.")
+
+st.sidebar.title("About")
+st.sidebar.info(
+    "This app is a demonstration of a Human Sentiment understanding using Streamlit."
+    "The bot is trained to respond to specific patterns."
+)
+st.sidebar.info(
+    "The bot is trained to respond to specific patterns."
+)
+st.sidebar.title("Controls")
+st.sidebar.markdown("Choose the type of input and then submit the input in below box.")
+st.sidebar.markdown("A custom graph will be plot to better understand the output of sentimental analysis")
+
+
 
 @st.cache_data
 def get_img_as_base64(file):
@@ -195,6 +211,7 @@ def get_img_as_base64(file):
     return base64.b64encode(data).decode()
 
 img_bg = get_img_as_base64("back_img.jpg")
+img_sidebar = get_img_as_base64("back_img_3.jpg")
 
 page_bg_img = f"""
 <style>
@@ -206,6 +223,12 @@ page_bg_img = f"""
     background-attachment: fixed;
 }}
 
+[data-testid="stSidebar"] > div:first-child {{
+    background-image: url("data:image/png;base64,{img_sidebar}");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}}
 
 [data-testid="stHeader"] {{
     background: rgba(0,0,0,0);
@@ -219,4 +242,3 @@ page_bg_img = f"""
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
-# st.sidebar.header("Configuration")
