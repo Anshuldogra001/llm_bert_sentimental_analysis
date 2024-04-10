@@ -16,4 +16,4 @@ pypdf
 sentence-transformers 
 bitsandbytes 
 accelerate
-python-pyaudio python3-pyaudio
+python3-pyaudio
