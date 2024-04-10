@@ -8,12 +8,3 @@ torchaudio
 # transformer
 git+https://github.com/huggingface/transformers
 SpeechRecognition
-
-
-langchain 
-chromadb 
-pypdf 
-sentence-transformers 
-bitsandbytes 
-accelerate
-PyAudio
